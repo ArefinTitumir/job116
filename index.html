@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="form">
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">How many days a week will you work at or
+                            nearer home?</label>
+                        <div class="col-md-2">
+                            <input type="number" class="form-control" id="input1" value="4">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">How do you commute to work on a typical
+                            day?</label>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                    <option>Drive Alone</option>
+                                    <option>Car/Vanpool</option>
+                                    <option>Public Trans</option>
+                                    <option>Bike/Walk</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p>Answer the following questions if any part of your trip to work involves driving your own
+                        vehicle:</p>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">What do you pay for parking per day?</label>
+                        <div class="col-md-2">
+                            <input type="number" class="form-control" id="input1" value="8.00">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Which band of Motor Tax does your car fall
+                            into? This estimates your car costs (See chart below)(Select AVERAGE if unsure)</label>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                    <option>E</option>
+                                    <option>F</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Estimated car fuel costs based off of band input (in Euro per km)</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Estimated car operating costs net of fuel based off of band input (in Euro per km)</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Current Price of Fuel (can leave default value)</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" id="input1" value="1.31">
+                        </div>
+                    </div>
+
+                    <p>If you drive to work, enter your figures for each of the following or leave default values:</p>
+
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">Roundtrip commute in kilometers</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="40">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">Roundtrip commute in minutes</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="60">
+                            </div>
+                        </div>
+                        <p>If you take public transport or car/van pool, enter your figures or leave default values:</p>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">How much do you pay per day (round trip)</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="1">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">If you drive to the transport hub or car pool location, how many kilometers do you drive roundtrip?</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="4">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">What is your total roundtrip travel minutes to/from work?</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="96">
+                            </div>
+                        </div>
+                        <p>If you walk/cycle to work, enter your figures for each of the following:</p>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">Roundtrip commute in minutes</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="60">
+                            </div>
+                        </div>
+                        <p>Enter your value for other office / travel costs per day or leave default values:</p>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">Food / beverages per day (net of the cost you will pay for the same at home)</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="7.28">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">Work clothes per day (divide your annual work clothes budget by 231)</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="2.41">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">Misc. daily expenses (tolls, childcare, pools, kitty, eldercare) - no default available</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="0.00">
+                            </div>
+                        </div>
+                        <p>Extra Annual Home Electricity Usage</p>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">Enter your estimate of the annual total of extra energy (in kWh) you will use as a result of being at home more or leave default value.</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="3000">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="text" class="col-md-10 col-form-label">Enter the cost you pay for home electricity (per kWh) or leave default value.</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="input1" value="0.25">
+                            </div>
+                        </div>
+                     
+                       <p> Other per person additional ANNUAL savings--Enter lump sum annual savings only; per day expenses should be added as Misc. daily above</p>
+                       <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Car insurance premium reduction due to less driving (no default available; ask your insurance Broker)</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" id="input1" value="0.00">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Other annual savings (enter any other Annual savings here)</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" id="input1" value="0.00">
+                        </div>
+                    </div>
+                    <p> Here Is What You Would Save By Working Remotely</p>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Net Annual Financial Savings</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Equivalent € per hour earnings</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Equivalent Work Days per Year Saved by Reduced Commuter Travel</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <p>Here is the Environmental Impacts of Working Remotely</p>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">CO2 Emissions Reduced per day working remote (in tons)</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Your Personal Percentage Reduction in CO2 Emissions</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Liters of Fuel Saved</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control"placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label"># of Cars off the road</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label"># of accidents averted</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="text" class="col-md-10 col-form-label">Cost of accidents averted (on average)</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="output" id="input1" value="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
